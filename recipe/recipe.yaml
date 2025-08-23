@@ -20,7 +20,7 @@ build:
 requirements:
   host:
     - python ${{ python_min }}.*
-    - poetry-core
+    - hatchling
     - pip
   run:
     - python >=${{ python_min }}
@@ -30,12 +30,6 @@ requirements:
   run_constraints:
     - pandas *
     - pyarrow >=5.0.0
-    - Sphinx <7
-    - sphinx_rtd_theme *
-    - sphinx-autobuild *
-    - sphinx-autodoc-typehints *
-    - sphinx-toolbox *
-    - sphinxcontrib-mermaid *
 
 tests:
   - python:
