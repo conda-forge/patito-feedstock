@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: patito
-  version: "0.8.4"
+  version: "0.8.5"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/patito-${{ version }}.tar.gz
-  sha256: f5e00b64f4e3b4be84352fcb3ba460059ea803318ec400ac3de363f41c1bb4bb
+  sha256: c005f9dad8107a8952e50090119ccd967d232d3842f60d7353584490ff959459
 
 build:
   number: 0
@@ -25,11 +25,8 @@ requirements:
   run:
     - python >=${{ python_min }}
     - pydantic >=2.7.0
-    - polars >=1.10.0
+    - polars >=1.32.0
     - typing_extensions
-  run_constraints:
-    - pandas *
-    - pyarrow >=5.0.0
 
 tests:
   - python:
