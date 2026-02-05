@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: patito
-  version: "0.8.5"
+  version: "0.8.6"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/patito-${{ version }}.tar.gz
-  sha256: c005f9dad8107a8952e50090119ccd967d232d3842f60d7353584490ff959459
+  sha256: 0ce3fcff07b9f20f82a4d26ade77151d6251c4b13d37889c39527e44bfc9b01f
 
 build:
   number: 0
